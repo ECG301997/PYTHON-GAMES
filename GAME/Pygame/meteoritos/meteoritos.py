@@ -33,16 +33,16 @@ def meteoritos():
     pygame.init()
     ventana = pygame.display.set_mode((ANCHO, ALTO))
     # imagen de fondo
-    fondo = pygame.image.load("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\imagenes\\fondo.png")
+    fondo = pygame.image.load("imagenes/fondo.png")
     # titulo
     pygame.display.set_caption("Meteoritos")
     # crea objeto jugador
     nave = jugador.Nave()
     contador = 0
     # sonidos
-    pygame.mixer.music.load("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\sonidos\\fondo.wav")
+    pygame.mixer.music.load("sonidos/fondo.wav")
     pygame.mixer.music.play(3)
-    sonidoColision = pygame.mixer.Sound("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\sonidos\\colision.aiff")
+    sonidoColision = pygame.mixer.Sound("sonidos/colision.aiff")
     # fuente marcador
     fuenteMarcador = pygame.font.SysFont("Arial", 10)
     # ciclo del juego

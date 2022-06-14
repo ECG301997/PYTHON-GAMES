@@ -5,8 +5,8 @@ from clases import disparo
 class Nave(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.imagenNave = pygame.image.load("C:\\\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\imagenes\\nave.png")
-        self.imagenExplota = pygame.image.load("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\imagenes\\naveExplota.png")
+        self.imagenNave = pygame.image.load("imagenes/nave.png")
+        self.imagenExplota = pygame.image.load("imagenes/naveExplota.png")
         # tomamos rectangulo imagen
         self.rect = self.imagenNave.get_rect()
         # posicion inicial nave
@@ -15,7 +15,7 @@ class Nave(pygame.sprite.Sprite):
         self.velocidad = 30
         self.vida = True
         self.listaDisparo = []
-        self.sonidoDisparo = pygame.mixer.Sound("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\sonidos\\disparo.aiff")
+        self.sonidoDisparo = pygame.mixer.Sound("sonidos/disparo.aiff")
 
     def mover(self):
         if self.vida == True:

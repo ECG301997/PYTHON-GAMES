@@ -4,7 +4,7 @@ import pygame
 class Misil(pygame.sprite.Sprite):
     def __init__(self, posX, posY):
         pygame.sprite.Sprite.__init__(self)
-        self.imagenMisil = pygame.image.load("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\imagenes\\misil.png")
+        self.imagenMisil = pygame.image.load("imagenes/misil.png")
         self.rect = self.imagenMisil.get_rect()
         self.velocidadDisparo = 10
         self.rect.top = posY

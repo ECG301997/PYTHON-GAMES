@@ -4,7 +4,7 @@ import pygame
 class Asteroide(pygame.sprite.Sprite):
     def __init__(self, posX, posY):
         pygame.sprite.Sprite.__init__(self)
-        self.imagenAsteroide = pygame.image.load("C:\\Users\\Lenovo\\Desktop\\GAME\\Pygame\\meteoritos\\imagenes\\asteroide.png")
+        self.imagenAsteroide = pygame.image.load("imagenes/asteroide.png")
         self.rect = self.imagenAsteroide.get_rect()
         self.velocidad = 5
         self.rect.top = posY
